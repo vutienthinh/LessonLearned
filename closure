@@ -1,0 +1,14 @@
+function sum(num1) {
+ 	return function(num2) {
+		return num1 + num2;
+    }   
+}
+
+//
+
+function sum(num1) {
+	let num3 = 1;
+ 	return function(num2) {
+		return num1 + num2 + num3;
+    }   
+}
