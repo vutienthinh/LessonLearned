@@ -1,0 +1,8 @@
+const arr = [{value: 1},{value: 2},{value: 3},{value: 4},{value: 5}];
+
+const result = arr.reduce((acc, cur) => {
+	if(cur.value % 2 === 0) return acc + cur.value;
+  return acc;
+}, 0);
+
+console.log(result);
