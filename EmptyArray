@@ -1,0 +1,11 @@
+var a = [1,2,3];
+a = [];
+
+When assign array to [], it'll create new empty array
+
+var arr1 = ['a','b','c','d','e','f'];
+var arr2 = arr1;  // Reference arr1 by another variable 
+arr1 = [];
+console.log(arr2); // Output ['a','b','c','d','e','f']
+
+Solution : arr1.length = 0;
