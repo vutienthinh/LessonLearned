@@ -1,0 +1,10 @@
+
+
+In JavaScript, primitive types such as integers and strings are passed by value whereas objects are passed by reference
+
+var obj = { x: 1 };
+var aliasToObj = obj;
+aliasToObj.x ++;
+alert( obj.x );  // displays 2
+
+https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0
