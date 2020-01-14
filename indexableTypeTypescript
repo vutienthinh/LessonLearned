@@ -1,0 +1,7 @@
+let map: { [key: string]: boolean } = {};
+map['abc'] = true; // ok
+map.qwe = true; // ok
+map[1] = true; // still ok because it will be converted to string
+map['xcv'] = 'ccc';  // error
+
+https://www.typescriptlang.org/docs/handbook/interfaces.html#indexable-types
