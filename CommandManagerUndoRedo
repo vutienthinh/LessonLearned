@@ -36,3 +36,23 @@ var CommandManager = (function() {
   
   return CommandManager;
 })();
+
+///// Using it
+
+ $("#addNumbers").click(function(){
+        CommandManager.execute({
+          execute: function(){
+            $("#text").append("\n0123456789");
+          },
+          unexecute: function(){
+            //t.split("\n").slice(0,2)
+            var arr = $("#text").html().split("\n");
+            var html = arr.slice(0,arr.length-1).join("\n");
+            $("#text").html(html);
+          }
+        });
+    });
+    
+$("#redo").click(function(){
+      CommandManager.redo();
+    });
