@@ -1,0 +1,27 @@
+The major difference - null is explicit while undefined is implicit. 
+
+Let's say we have a variable and we don't have a value associated with that, so that makes it undefined but null is set as the value to explicitly indicate “no value”. 
+
+undefined is used when the nothing is "not" known, and null is used when the nothing is known.
+
+Null
+
+If a variable is null then it means the variable has no value and that it was explicitly set to have no value by the programmer. A variable will never be null unless somewhere in the code a programmer set a variable to null.
+
+This is important to know since when you see a null value you know that the programmer who wrote that code is telling you there is no value explicitly
+
+Undefined
+
+On the other hand undefined means that there is no value because no value has been set yet. 
+
+For example, if you create a variable and do not assign it a value then it will be undefined
+
+let a
+
+console.log(a)
+// undefined
+
+console.log(null == undefined)
+// true
+console.log(null === undefined)
+// false
