@@ -1,0 +1,31 @@
+There are 7 Primitive data types. They are___
+
+    Number
+    String
+    Boolean
+    Undefined
+    Null
+    Symbol
+    BigInt
+
+Code Examples:
+
+console.log(typeof(5)) //output, "number"
+console.log(typeof('Hello')) //output, "string"
+console.log(typeof(true)) //output, "boolean"
+console.log(typeof(undefined)) //output, "undefined"
+console.log(typeof(null)) //output, "object"**In JavaScript, typeof null is "object". We can consider it a bug in JavaScript and we can think it should be "null".
+
+Without primitive data types, javaScript’s other data types are reference data types. They are ____
+
+    Object
+    Function
+
+Arrays, regular expressions, and dates are the Object type.
+
+Code Examples:
+
+console.log(typeof({name: 'Faysal'})) //output, "object"
+console.log(typeof([1, 2, 5])) //output, "object"
+console.log(typeof(() => 4+4)) //output, "function"
+console.log(typeof(/exp/)) //output, "object"
